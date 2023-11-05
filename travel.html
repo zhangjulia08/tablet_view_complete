@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel = "stylesheet" href = "css/style.css">
+    <title>Travel</title>
+</head>
+<body>
+    <a href = "#main" id = "skip">Skip to Main Content</a>
+    <nav>
+        <ul class="container">
+            <li><a href = "index.html">Home/Pets</a></li>
+            <li><a href = "recipes.html">Recipes</a></li>
+            <li id="travel"><a href = "travel.html" class="current-page">Travel</a></li>
+        </ul>
+    </nav>
+   
+    <main id="main">
+        <h1>Travel</h1>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+
+        <script>
+              const btn = document.getElementById('darkModeToggle');
+              btn.addEventListener('click', function() {
+              document.body.classList.toggle('dark-mode');
+            });
+        </script>
+
+        <div>
+            <h2>Prague</h2>
+                <img src = images/prague_city_night.gif alt = "Prague city at night"> 
+                <img src = images/praguecity.jpeg alt = "Prague city sunrise">
+                <p> Prague is the location of several University of Michigan Study Abroad programs. Many schools such as LSA, Ross, Engineering, and School of Information send students annually to Eastern Europe to explore an international education for their desired topic. </p>
+                <p>Prague is a country in central Europe. It is the capital of Czech Republic. It has a lot of historical features and buildings. It is a beautiful city with a ton of architecture. Prague is a very popular destination spot for tourists.</p>
+                <h2>Photo Gallery</h2>
+                    <div class = "gallery">
+                        <img src = images/oldtownprague.jpeg alt = "Picture of Prague statues and skyline at sunset" title = "Prague at Sunset"> 
+                        <img src = images/dancinghouse.jpeg alt = "Famous Prague dancing house landmark" title = "Prague Dancing House"> 
+                        <img src = images/praguedecor.jpg alt = "Decorations from Prague market" title = "Prague Decor">
+                        <img src = images/prague3.jpg alt = "sculpture in Prague" title = "Prague Sculpture">
+                        <img src = images/lonelyplanet.jpeg alt = "Prague clock, Lonely Planet, landmark" title = "Lonely Planet">
+                    </div>
+                        <!--Megan DeFrancesco and Emy Klepacki-->
+                </div>
+        <div>
+            <h2>Jungfrau Switzerland</h2>
+    
+                <img src=images/jungfrau-helicopter.gif width="400" height="300" alt="Helicopter in Jungfrau.">
+                <img src=images/jungfrau-summit.jpeg width = "400" height="300" alt="Top of Jungfrau">
+
+                <h2>Geographical Location: Europe</h2>
+                <p>Jungfrau is a city in Switzerland known for its mountain summits nicknamed the “top of Europe.” It is very famous also for its railway created in 1912 that can bring you to a height of 3454m. At the summit there are outstanding views where you can see the whole city and beyond.</p>
+                <p>The scenery consists of valleys, waterfalls, rock walls, and snow peaks. When visiting, it is vital to go on a day with good weather because it enhances the quality of the views. Hiking is very popular at short trails called Grutschalp and Murren. A very common tourist attraction is also exploring the Lauterbrunnen valley.</p>
+
+                <h3>Photo Gallery</h3>
+                <div class = "gallery">
+                <figure>
+                    <img src=images/jungfrau_summit_building.jpg width = "200" alt="Tourists can take the train and elevator up to that building on summit">
+                    <figcaption>Jungfrau building summit</figcaption>
+                </figure>
+
+                <figure>
+                    <img src=images/jungfrau_train.jpg width = "200" alt="Train on railway that takes you to the top of the summit">
+                    <figcaption>Jungfrau train</figcaption>
+                </figure>
+
+                <figure>
+                    <img src=images/jungfrau_lodging.jpg width = "200" alt="Houses located in Jungfrau for people to stay at">
+                    <figcaption>Lodging in Jungfrau</figcaption>
+                </figure>
+
+                <figure>
+                    <img src=images/jungfrau_water.jpg width = "200" alt="Body of water located in Jungfrau fun for swimming">
+                    <figcaption>Lake in Jungfrau</figcaption>
+                </figure>
+
+                <figure>
+                    <img src=images/jungfrau_lookout.jpg width = "200" alt="Tourists can go to the spot to look out over the country">
+                    <figcaption>Lookout point at Jungfrau</figcaption>
+                </figure>
+            </div>
+            <!-- Daniel Saltzman -->
+
+        </div>
+        <div>
+            <h2>Yellowstone</h2>
+    
+            <img src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron.">
+            <img src="images/yellowstone_cauldron.jpg" width = "400" alt="Bubbling cauldron">
+
+            <h3>Geographical Location: North America</h3>
+            <p>Yellowstone is the first national park in the United States. It covers over 2.2 million acres, and provides an opportunity to see wildlife and explore geothermal areas.  In fact, Yellowstone contains about half the world's active geysers.</p>
+            <p>These unique opportunities also bring out a lot of bad decisions among the tourists.  Every year visitors injure themselves or the wildlife by getting close to the animals.  You  can see examples of people making bad decisions by visiting <a href ="https://www.facebook.com/groups/yellowstonenationalparkinvasionoftheidiots/">Yellowstone National Park: Invasion of the Idiots</a>, <a href="https://www.instagram.com/touronsofyellowstone/?hl=en">Tourons of Yellowstone</a>, or  <a href="https://cowboystatedaily.com/">Cowboy State Daily</a>.</p>
+
+            <h3>Photo Gallery</h3>
+            <div class = "gallery">
+            <figure>
+                <img src="images/yellowstone_travertine.JPG" width = "200" alt="A large mound of multi-colored travertine">
+                <figcaption>Mammoth Hot Springs has a number of actively forming Travertine terraces.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/yellowstone_sunset.jpg" width = "200" alt="Sunset over mountains with some charred trees in the foreground">
+                <figcaption>The drive to Lamar Valley requires some dangerous roads.  But the result is amazing sunset views.</figcaption>
+            </figure>
+
+
+            <figure>
+                <video width="200"  controls>
+                    <source src="images/yellowstone_prism.MOV">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>The multicolored layers get their hues from different species of bacteria living in the cooler water around the spring.</figcaption>
+            </figure>
+
+
+            <figure>
+                <video width="200"  controls>
+                    <source src="images/yellowstone_buffalo.MOV">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>The buffalo were so common along the roads in Yellowstone that our mantra became "If it ain't lickin the car, we aren't stopping."</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/yellowstone_sulphur_springs.JPG" width = "200" alt="A large spring with clouds of sulfur smoke rising from it.">
+                
+                <figcaption>If you can handle the odor, the Yellowstone Sulphur Springs is a great place to hike.</figcaption>
+            </figure>
+        </div>
+            <!-- Colleen van Lent -->
+        </div>
+       <div>
+            <h2>Grand Canyon</h2>
+                <img src="images/grand_canyon.gif" width="400" alt = "Grand Canyon.">
+                <img src="images/grand_canyon.jpg" width="400" alt = "Grand Canyon more vibrant">
+                <h3>North America</h3>
+                <p>The Grand Canyon is a natural geological formation located in the state of Arizona. It is a steep-sided canyon carved by the Colorado River over millions of years. The canyon is known for its size, vibrant and varied colors, and intricate rock formations. It is one of the most famous and visited natural landmarks in the United States and around the world.</p>
+                <p>Though the Grand Canyon is one of the most iconic places to travel, there are many dangers that come from such a terrain. Between 2010 and 2020, 134 have died, mainly due to extreme heat. You can see below, examples of people getting hurt due to the heat and carelessness. </p>
+                <h3>Photo Gallery</h3>
+                    <div class = "gallery">
+                <figure>
+                    <img src="images/grand_canyon_sunset_snow.jpg" alt="sunset with snowy cliffs" width="200">
+                    <figcaption>Overlook the Grand Canyon snowy cliffs while the sun is setting</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/grand_canyon_river.jpg" alt="Valley with river" width="200">
+                    <figcaption>Grand Canyon valley river during the day</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/grand_canyon_cliff_people.jpg" alt="people at cliff" width="200">
+                    <figcaption>Cliff overlooking the rest of the Grand Canyon</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/grand_canyon_goat.jpg" alt="Goat on a cliff" width="200">
+                    <figcaption> A mountain goat looking at the camera standing on top of the rocks</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/grand_canyon_waterfall.jpg" alt="waterfall in a valley" width="200">
+                    <figcaption>Grand Canyon valley waterfall with trees</figcaption>
+                </figure>
+            </div>
+            <!--by Anna Hou-->
+     </div>
+    </main>
+</body>
+</html>

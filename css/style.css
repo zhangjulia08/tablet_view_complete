@@ -1,0 +1,241 @@
+body {
+    background-color: #c44601;
+    color: #FFFFFF;
+    font-family: "Courier New";
+}
+h1 {
+    font-size: 50px;
+    font-family: monospace;
+    text-align: center;
+    padding: 15px;
+}
+h2 {
+    font-size: 40px;
+    font-family: Courier;
+    color:rgb(255, 253, 145);
+    text-align: center;
+}
+h3 {
+    font-size: 30px;
+    font-family: "Courier New";
+    color: #ffe1e7;
+    padding: 10px;
+}
+p {
+    line-height: 25px;
+    padding: 20px;
+}
+img {
+    border: solid 5px antiquewhite;
+    padding: 10px;
+    margin: auto;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-image {
+    max-height: 600px;
+    max-width: 600px;
+}
+ul {
+    margin-left: 50px;
+    list-style-type: none;
+}
+
+li {
+    height: 50px;
+    color: white;
+    display: inline;
+    margin-right: 10px; 
+}
+
+body li:not(:last-child)::after {
+    content: ", ";
+}
+
+nav li:not(:last-child)::after {
+    content: none;
+}
+ol {
+    list-style-type: decimal;
+    margin-left: 50px;
+    padding: 10px;
+    line-height: 25px;
+    
+}
+nav a {
+    background-color: brown;
+    padding: 5px;
+    margin: 20px;
+    border: solid 2px rgb(23, 8, 8);
+}
+
+a {
+    text-align: underline;
+}
+
+#skip {
+    text-transform: uppercase;
+    position: absolute;
+    left: -500px;
+}
+
+#skip:focus {
+    left: 150px;
+    border: solid 2px blue;
+    font-size: 20px;
+}
+
+*:focus{
+    border: solid 2px blue;
+}
+
+.thumbnail {
+    border-radius: 30px;
+}
+
+.current-page {
+    text-decoration:underline;
+    background-color: rgb(67, 0, 0);
+    border: solid 2px #ffe1e7;
+}
+    
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:0px;
+    padding:0px;
+}
+
+/*.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }*/
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border: solid 5px antiquewhite;
+    padding: 10px;
+    margin: 20p;
+    border-top-right-radius: 30px 30px 30px 30px;
+}
+
+nav{
+    background-color: #ddd;
+    padding: 25px 0; 
+    text-align: center;
+    font-size:30px;
+}
+
+nav a{
+    font-size: 35px;
+    margin: auto;
+    padding: 0px;
+    margin: 0px;
+    display:block;
+}
+
+.home-pets {
+    grid-column:1/2;
+}
+
+.recipes {
+    grid-column:2/3;
+}
+
+.travel {
+    grid-column:3/4;
+}
+
+ @keyframes nav-animation {
+    from {background-color: #c44601;}
+    to {background-color: rgb(162, 0, 70);}
+  }
+
+  .nav-animation,
+nav {
+    animation: nav-animation 5s infinite;
+    animation-direction: alternate-reverse;
+    background-color: #c44601;
+}
+
+  @media (prefers-reduced-motion: reduce) {
+    .nav-animation {animation: none;}
+  }
+
+  @media screen and (min-wideth: 600px){
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+  }
+
+  @media screen and (min-width: 700px){
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        }
+    .nav-animation,
+    nav, h1 {
+        animation: nav-animation 5s infinite;
+        animation-direction: alternate-reverse;
+        background-color: #c44601;
+    }
+
+    li {
+        display: block;
+    }
+
+    ul {
+        list-style-type: circle;
+    }
+    
+    body li:not(:last-child)::after {
+        content: none;
+    }
+
+    nav a {
+        border: none;
+    }
+    }   
+
+    
+  @media screen and (min-width: 900px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    nav a {
+        border: none;
+    }
+  }
+
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  
